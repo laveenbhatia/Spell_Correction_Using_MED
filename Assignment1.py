@@ -1,6 +1,7 @@
 import numpy as np
 import nltk
 import pandas as pd
+import pytrec_eval
 from nltk.corpus import wordnet as wn
 
 
@@ -81,7 +82,7 @@ for w in corpus:
     # print("s_10", s_10)
     s10_list.append(s_10)
 
-print("Average s@1 ", sum(s1_list) / len(s1_list))
-print("Average s@5 ", sum(s5_list) / len(s5_list))
-print("Average s@10 ", sum(s10_list) / len(s10_list))
+print("Average s@1 ", pytrec_eval.compute_aggregated_measure("gm", s1_list))
+print("Average s@5 ", pytrec_eval.compute_aggregated_measure("gm", s5_list))
+print("Average s@10 ", pytrec_eval.compute_aggregated_measure("gm", s10_list))
 
