@@ -33,7 +33,7 @@ def min_ed_dist(target, source):
     return sol[len(source)-1, len(target)-1]
 
 
-corpus_df = pd.read_excel("C://Users//lavee//Documents//UWindsor//Courses//Winter'22//NLP//Assignment 1//corpus.xlsx")
+corpus_df = pd.read_excel("corpus.xlsx")
 corpus_df = corpus_df.head(500)
 corpus_records = corpus_df.shape[0]
 print("Number of records in corpus ", corpus_records)
