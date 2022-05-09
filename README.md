@@ -10,3 +10,10 @@ Consider the word, "completly" from a corpus C and the corresponding correct wor
 The datasets used are:
 * [Birkbeck spelling error corpus](https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/0643): This contains a list of misspelled words along with their correct spellings. This has been preprocessed manually and converted to an excel file available in corpus.xlsx.
 * [Wordnet dictionary](https://wordnet.princeton.edu/): This contains a list of all english words against which we compare our misspelled words.
+
+## Instructions to run the project
+* Run the folloiwng command to clone the github repo
+```bash
+git clone https://github.com/laveenbhatia/Spell_Correction_Using_MED.git
+```
+* Run Spell_Corr_MED.py
